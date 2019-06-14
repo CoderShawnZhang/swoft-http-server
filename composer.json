@@ -1,0 +1,30 @@
+{
+    "name": "swoft-rewrite/swoft-http-server",
+    "description": "分布式开发，重写swoft框架之 -- http-server 模块",
+    "keywords":["swoft","http-server"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhanghongbo",
+            "email": "taobao1875@163.com"
+        }
+    ],
+    "minimum-stability":"dev",
+    "require": {
+        "php":">7.1.0"
+    },
+    "require-dev":{
+        "phpunit/phpunit":"^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwoftRewrite\\Http\\Server\\":"src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "SwoftRewrite\\Http\\Server\\Unit\\":"test/unit/",
+            "SwoftRewrite\\Http\\Server\\Testing\\":"test/testing/"
+        }
+    }
+}
