@@ -1,12 +1,20 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: zhanghongbo
- * Date: 2019/6/14
- * Time: 上午9:19
+ * Http 服务器
  */
+namespace SwoftRewrite\Http\Server;
 
-class AutoLoader
+
+use SwoftRewrite\Framework\SwoftComponent;
+
+class AutoLoader extends SwoftComponent
 {
+    public function getPrefixDirs()
+    {
+        return [
+            __NAMESPACE__ => __DIR__,
+        ];
+    }
+
 
 }
